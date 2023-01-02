@@ -223,3 +223,10 @@ hr {
     position: fixed;
   }
 }
+
+/* img-thumbnail class for adventure grid image size */
+.img-thumbnail{
+  padding: 0;
+  height: 196px;
+  width: auto;
+}
