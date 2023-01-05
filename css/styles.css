@@ -231,3 +231,9 @@ hr {
   width: auto;
 }
 
+/* Adventure page CSS */
+
+.explore-heading{
+  font-size: 3em;
+  font-weight: 600;
+}
