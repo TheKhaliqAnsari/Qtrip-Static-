@@ -16,120 +16,142 @@
   <body>
     <!-- TODO: MODULE_ADVENTURE_DETAILS -->
     <!-- 1. Copy navigation bar HTML from Landing page document -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ps-3">
-      <a class="navbar-brand" href="#">QTrip</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav d-flex justify-content-end w-100">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Explore</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">QTrip</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#redirect"
+          aria-controls="redirect"
+          aria-expanded="false"
+          aria-label="Expand Navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="redirect">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/adventures/index.html"
+                >Explore</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="container adventure-detail-card mx-auto">
-      <div class="row">
-
-         <div class="col-12 col-lg-8 card">
-
-            <div class="row">
-
-               <div class="col-12">
-                  <div class="row">
-                     <div class="col-12 col-lg-8 p-2">
-                        <img src="../../../assets/adventures/resort/resort1.jpg" alt="Image1"
-                           class="adventure-card-image" />
-                     </div>
-
-                     <div class="col-12 col-lg-4 d-none d-lg-block px-2">
-                        <div class="row">
-                           <div class="col-12 my-2">
-                              <img src="../../../assets/adventures/resort/resort2.jpg" alt="Image2"
-                                 class="adventure-card-image" />
-                           </div>
-
-                           <div class="col-12 my-2">
-                              <img src="../../../assets/adventures/resort/resort3.jpg" alt="Image2"
-                                 class="adventure-card-image" />
-                           </div>
-                        </div>
-                     </div>
+    <div class="container">
+      <div class="content">
+        <!-- TOOD: MODULE_ADVENTURE_DETAILS -->
+        <!-- 1. Write the child elements as required. -->
+        <!-- 2. Remember to use .adventure-card and its related classes. -->
+        <div class="row gx-lg-3 gy-3">
+          <div class="col-lg-8">
+            <div class="panel-container panel">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img
+                    class="resort-img"
+                    src="../../../assets/adventures/resort/resort1.jpg"
+                  />
+                </div>
+                <div class="col-lg-4 d-lg-block d-none">
+                  <div class="mb-4">
+                    <img
+                      class="img-fluid resort-img"
+                      src="../../../assets/adventures/resort/resort2.jpg"
+                    />
                   </div>
-               </div>
+                  <div>
+                    <img
+                      class="img-fluid resort-img"
+                      src="../../../assets/adventures/resort/resort3.jpg"
+                    />
+                  </div>
+                </div>
+              </div>
 
-               <div col="col-12">
-                  <h1 class="card-title">Sunshine Resort</h1>
-                  <h5 class="card-subtitle mb-2 text-muted">Relax and unwind yourself</h5>
-                  <!-- <div class="border-bottom border-muted"></div> -->
-                  <hr size="3">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                     card's
-                     content.</p>
-                  <h3>About the Experience</h3>
-                  <p>
-                     About the Experience
-                     Chairman’s Jade Resort is constructed in the most natural setting for a day out that pleases the
-                     senses. The property is
-                     spread over eight acres of land with facilities for both indoor and outdoor adventures. Get active
-                     in the pool with a
-                     game of water polo or try some archery. For the indoor sort, there are a host of popular games and
-                     adventures. If that
-                     is not enticing enough head to the gymnasium!
-                  </p>
-                  <p>Inclusions</p>
-                  <ul>
-                     <li>Swimming pool access</li>
-                     <li>Outdoor sports - Water Polo, Archery, Tennis, and Zorbing
-                        Indoor games - Indoor Squash, Table Tennis, Carrom, Badminton, Chess, Billiards, and X-Box 360
-                        KINECT</li>
-                     <li>Parking</li>
-                  </ul>
-                  <p>Know before you go</p>
-                  <ul>
-                     <li>Game accessories like balls and shuttlecocks will need to be purchased</li>
-                     <li>All adventures and game accessories are subject to availability</li>
-                     <li>Nylon swimwear must be worn at all times when using the swimming pool</li>
-                     <li>Children must be accompanied by parents or guardians at all times</li>
-                     <li>Complimentary entry for children below the height of three feet A valid photo ID is mandatory
-                        to enter the resort</li>
-                  </ul>
-                  <p>Not included</p>
-                  <ul>
-                     <li>Swimwear</li>
-                     <li>Pickup and drop</li>
-                     <li>Towel</li>
-                  </ul>
+              <div class="other-content mt-2">
+                <h1>Sunshine Resort</h1>
+                <p class="caption">Relax and Unwind yourself</p>
+                <hr />
+                <h5>About the Experience</h5>
+                <p>
+                  Chairman's Jade Resort is constructed in the most natural
+                  setting for a day out that pleases the senses. The property is
+                  spread over eight acres of land with facilities for both
+                  indoor and outdoor adventures. Get active in the pool with a
+                  game of water polo or try some archery. For the indoor sort,
+                  there are a host of popular games and adventures. If that is
+                  not enticing enough head to the gymnasium!
+                </p>
 
-               </div>
+                <div class="mb-3">Inclusions</div>
+
+                <ul class="ms-3">
+                  <li>Swimming pool access</li>
+                  <li>
+                    Outdoor sports - Water Polo, Archery, Tennis, and Zorbing
+                  </li>
+                  <li>
+                    Indoor games - Indoor Squash, Table Tennis, Carrom,
+                    Badminton, Chess, Billiards, and X-Box 360 KINECT
+                  </li>
+                  <li>Parking</li>
+                </ul>
+
+                <div class="mb-3">Know before you go</div>
+                <ul class="ms-3">
+                  <li>
+                    Game accessories like balls and shuttlecocks will need to be
+                    purchased
+                  </li>
+                  <li>
+                    All adventures and game accessories are subject to
+                    availability
+                  </li>
+                  <li>
+                    Nylon swimwear must be worn at all times when using the
+                    swimming pool
+                  </li>
+                  <li>
+                    Children must be accompanied by parents or guardians at all
+                    times
+                  </li>
+                  <li>
+                    Complimentary entry for children below the height of three
+                    feet A valid photo ID is mandatory to enter the resort
+                  </li>
+                </ul>
+
+                <div class="mb-3">Not included</div>
+                <ul class="ms-3">
+                  <li>Swimwear</li>
+                  <li>Pickup and drop</li>
+                  <li>Towel</li>
+                </ul>
+              </div>
             </div>
-         </div>
-
-         <div class="col-12 col-lg-4 card p-3" id="booking-section">
-            <div id="booking-avaibality">
-               <h2 class="card-title">Sold Out</h2>
-               <hr size="3">
-               <h5 class="card-subtitle mb-2 text-muted">This adventure is currently sold out. But theres lot more to
-                  <a href="../index.html" style="color: orange !important;">explore</a>
-               </h5>
-            </div>
-         </div>
-
+          </div>
+          <div class="col-lg-4 position-relative">
+            <div class="panel sold-out-panel" id="reservation">
+                <h3>
+                  Sold Out!
+                </h3>
+                <hr>
+                <p>This adventure is currently sold out. But there's a lot more to 
+                  <a href="../../adventures/"><span class="explore-link">explore.</span></a></p>
+            </div></div>
+        </div>
       </div>
-   </div>
+    </div>
 
     <footer>
       <div class="container">© QTrip 2020</div>
